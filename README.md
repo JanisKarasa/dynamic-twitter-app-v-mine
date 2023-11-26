@@ -4,7 +4,7 @@
 
 ---
 
-**Dynamic Twitter Project | JavaScript**
+**Dynamic Twitter Project v2 | JavaScript + JSON file as a data source**
 
 Re-creating the Twitter Page with mock JSON data by rendering data on the page with dynamic HTML.
 
