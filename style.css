@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* columns */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.wrapper {
+  padding: 0 17px;
+  margin-bottom: 30px;
+}
+
+.container {
+  height: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  border: 1px solid #f1f1f1;
+}
+
+.header {
+  padding-top: 5px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_wrapper {
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.header_title_wrapper {
+  display: flex;
+}
+
+.header_title {
+  padding-left: 15px;
+}
+
+.header_title h3 {
+  /* font-size: 26px; */
+  font-weight: 700;
+  margin-bottom: 3px;
+  padding-right: 3px;
+}
+
+.header_title > p {
+  color: #5b7083;
+}
+
+.header_images {
+  position: relative;
+}
+
+.cover_photo {
+  display: block;
+  width: 100%;
+}
+
+.avatar {
+  display: block;
+  position: absolute;
+  width: 22%;
+  height: auto;
+  bottom: 5px;
+  left: 15px;
+  transform: translateY(50%);
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.btn {
+  margin: 13px 20px 0 auto;
+  width: max-content;
+  background-color: #1fa1f1;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 17px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+.profile_name {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.profile_username {
+  color: #5b7083;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.profile_joined-date {
+  color: #5b7083;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.profile_following {
+  display: flex;
+  font-size: 16px;
+}
+
+.profile_following p {
+  margin-right: 20px;
+  color: #5b7083;
+  margin-left: 5px;
+}
+
+/* TABS SECTION */
+
+.selector {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-around;
+}
+
+.tab {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.125rem;
+  color: #5b7083;
+}
+.tab:hover {
+  cursor: pointer;
+  color: #1fa1f1;
+}
+/* select all to display none and then set show-by-default to display: block */
+.content-body {
+  display: none;
+}
+.show-active {
+  display: block;
+  /* adding fade-away effect we set bellow */
+  animation: fade 1s;
+}
+/* indicating which tab is active without hovering */
+.tab-active {
+  /* background-color: darkgray; */
+  color: #1fa1f1;
+  border-bottom: 2px solid #1fa1f1;
+}
+
+/* setting a fade-away effect */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* TWEETS TAB SECTION */
+
+.avatar_small {
+  display: block;
+  width: 50px;
+  bottom: 5px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+/* TWEET SECTION */
+.tweet_wrapper {
+  display: flex;
+  padding: 12px 17px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.tweet {
+  padding-left: 13px;
+}
+
+.tweet_credentials {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.tweet_profile_name {
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+.tweet_profile_username {
+  color: #5b7083;
+  padding-right: 4px;
+}
+
+.tweet_date {
+  color: #5b7083;
+}
